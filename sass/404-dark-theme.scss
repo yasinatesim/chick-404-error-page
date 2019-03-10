@@ -1,0 +1,115 @@
+html, body, h1, p {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+@font-face {
+	font-family: 'sf_pro_displaybold';
+	src: url('../fonts/sf-pro-display-bold-webfont.woff2') format('woff2'),
+	url('../fonts/sf-pro-display-bold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'sf_pro_displaylight';
+	src: url('../fonts/sf-pro-display-light-webfont.woff2') format('woff2'),
+	url('../fonts/sf-pro-display-light-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'sf_pro_displaymedium';
+	src: url('../fonts/sf-pro-display-medium-webfont.woff2') format('woff2'),
+	url('../fonts/sf-pro-display-medium-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.not-found-dark {
+	background-color: #2c304d;
+	background-image: linear-gradient(60deg, #2c304d 0%, #502d55 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2c304d', endColorstr='#502d55', GradientType=1);
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	overflow: hidden;
+
+	&::after {
+		@media (min-width: 768px) {
+			content: '';
+			background-image: url(../img/bg-lines.svg);
+			background-size: cover;
+			background-position: center;
+			position: absolute;
+			background-repeat: no-repeat;
+			width: 100vw;
+			height: 100vh;
+			animation-name: rotated-bg;
+			animation-duration: 300s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+
+			@keyframes rotated-bg {
+				from {
+					transform: rotate(0deg);
+				}
+				to {
+					transform: rotate(360deg);
+				}
+			}
+		}
+	}
+
+	&__image {
+		margin-top: 150px;
+		display: block;
+		max-width: 100%;
+	}
+
+	&__title {
+		font-size: 50px;
+		color: #F8DAC2;
+		margin-top: 40px;
+		margin-bottom: 15px;
+		font-family: 'sf_pro_displaybold', sans-serif;
+	}
+
+	&__description {
+		font-size: 25px;
+		color: rgba(#f8f4e9, .5);
+		margin-bottom: 30px;
+		font-family: 'sf_pro_displaylight', sans-serif;
+	}
+
+	&__button {
+		background-color: #493c59;
+		width: 154px;
+		height: 54px;
+		border-radius: 5px;
+		color: #fff;
+		font-size: 18px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		z-index: 2;
+		font-family: 'sf_pro_displaymedium', sans-serif;
+		transition: all 1s;
+
+		&:hover {
+			background-color: darken(#493c59, 5%);
+		}
+	}
+}
+
