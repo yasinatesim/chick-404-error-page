@@ -116,7 +116,7 @@ a {
 		transition: all 1s;
 
 		&:hover {
-			background-color: darken(#493c59, 5%);
+			background-color: lighten(#493c59, 5%);
 		}
 	}
 }
