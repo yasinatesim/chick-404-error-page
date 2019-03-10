@@ -45,6 +45,7 @@ a {
 }
 
 .not-found-dark__image {
+  width: 473.5px;
   display: block;
   max-width: 100%;
 }
@@ -133,5 +134,11 @@ a {
     margin-top: 150px;
     position: relative;
     z-index: 2;
+  }
+}
+
+@media (min-height: 768px) {
+  .not-found-dark__image {
+    width: 947px;
   }
 }

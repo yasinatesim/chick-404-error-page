@@ -75,7 +75,10 @@ a {
 			position: relative;
 			z-index: 2;
 		}
-		margin-top: 150px;
+		width: 473.5px;
+		@media (min-height: 768px) {
+			width: 947px;
+		}
 		display: block;
 		max-width: 100%;
 	}

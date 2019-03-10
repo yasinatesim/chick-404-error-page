@@ -43,7 +43,7 @@ a {
 }
 
 .not-found-light__image {
-  margin-top: 150px;
+  width: 473.5px;
   display: block;
   max-width: 100%;
 }
@@ -132,5 +132,11 @@ a {
     margin-top: 150px;
     position: relative;
     z-index: 2;
+  }
+}
+
+@media (min-height: 768px) {
+  .not-found-light__image {
+    width: 947px;
   }
 }
