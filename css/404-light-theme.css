@@ -101,6 +101,7 @@ a {
             animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
+    z-index: 1;
   }
 
 @-webkit-keyframes rotated-bg {
@@ -126,4 +127,10 @@ a {
               transform: rotate(360deg);
     }
 }
+
+  .not-found-light__image {
+    margin-top: 150px;
+    position: relative;
+    z-index: 2;
+  }
 }

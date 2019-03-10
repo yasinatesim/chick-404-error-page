@@ -56,6 +56,7 @@ a {
 			animation-duration: 300s;
 			animation-timing-function: linear;
 			animation-iteration-count: infinite;
+			z-index: 1;
 
 			@keyframes rotated-bg {
 				from {
@@ -69,6 +70,11 @@ a {
 	}
 
 	&__image {
+		@media (min-width: 768px) {
+			margin-top: 150px;
+			position: relative;
+			z-index: 2;
+		}
 		margin-top: 150px;
 		display: block;
 		max-width: 100%;
