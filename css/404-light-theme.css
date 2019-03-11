@@ -39,7 +39,6 @@ a {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  overflow: hidden;
 }
 
 .not-found-light__image {
@@ -89,7 +88,7 @@ a {
     background-image: url(../img/bg-lines-light-theme.svg);
     background-size: cover;
     background-position: center;
-    position: absolute;
+    position: fixed;
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;

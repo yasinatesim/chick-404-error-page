@@ -60,6 +60,7 @@ a {
 			animation-timing-function: linear;
 			animation-iteration-count: infinite;
 			z-index: 1;
+
 			@keyframes rotated-bg {
 				from {
 					transform: rotate(0deg);
