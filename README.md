@@ -1,5 +1,5 @@
 <p  align="center">
-<img width="400" src="http://assets.materialup.com/uploads/4cccdb7f-aaa2-4167-9520-3d5600618294/preview.jpg">
+<img width="400" src="https://yasinatesim.github.io/chick-404-error-page/img/404-light-theme.png">
 
 </p>
 
